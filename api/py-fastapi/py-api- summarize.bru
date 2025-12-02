@@ -1,0 +1,24 @@
+meta {
+  name: py-api: summarize
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/summarize
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"text": "The simplest (recommended) way to get NVM for Windows running properly is to uninstall any prior Node installation before installing NVM for Windows. It avoids all of the pitfalls listed below. However; you may not wish to nuke your Node installation if you've highly customized it. NVM for Windows can assume management of an existing installation, but there are nuances to this (dependent entirely on the permissions of the user running the installation). If you have an administrative account, it's relatively safe to install NVM for Windows before uninstalling the original Node version. If you are working in a closed environment, such as a corporate Active Directory environment where installations/uninstallations are controlled by group policy, you should really consider removing the original version of Node before installing NVM4W."}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

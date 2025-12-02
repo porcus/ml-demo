@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "py-fastapi",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

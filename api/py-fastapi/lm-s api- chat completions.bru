@@ -1,0 +1,39 @@
+meta {
+  name: lm-s api: chat completions
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:1234/v1/chat/completions
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "model": "qwen/qwen3-vl-8b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "Always answer in rhymes. Today is Thursday"
+      },
+      {
+        "role": "user",
+        "content": "What day is it today?"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": -1,
+    "stream": false
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
