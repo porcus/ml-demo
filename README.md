@@ -1,4 +1,3 @@
-
 # Project Overview
 
 This repo contains a small, end-to-end AI-assisted lending decisioning prototype, built with FastAPI (Python) on the backend and React + TypeScript + Vite on the frontend.
@@ -42,7 +41,7 @@ Enrich the dataset with **post-decision performance labels**, such as whether an
   - Using these performance insights to refine rules and profiles over time, aiming for not just alignment with manual decisions, but alignment with **actual loan outcomes**.
 
 
-----
+___
 
 # Repository
 
@@ -51,7 +50,7 @@ This repository contains two applications that work together:
 - api/ – Python backend API (served with Uvicorn, dependencies managed with uv)
 - ui/ – React frontend (built and run with Node.js)
 
----
+___
 
 ## Prerequisites
 
@@ -77,7 +76,7 @@ Make sure the following are installed on your system.
 - LM Studio: Latest version (recommended)
 - Download and load a model of your choosing (qwen/qwen3-vl-8b recommended)
 
----
+___
 
 ## Backend (Python API – api/)
 
@@ -108,7 +107,7 @@ Notes:
 
 Adjust the app.main:app reference if your ASGI app lives in a different module or file.
 
----
+___
 
 ## Frontend (React UI – ui/)
 
@@ -134,7 +133,7 @@ By default, the dev server will be available at:
 
 Open that URL in your browser to view the app.
 
----
+___
 
 ## LLM (LM Studio + Model) 
 
@@ -142,7 +141,7 @@ Open that URL in your browser to view the app.
 2. Find a model that you can run on your machine.
 3. Note: Model "qwen/qwen3-vl-8b" was used during development of this app.  If you choose a different model, either edit llm_client.py or set your LMSTUDIO_MODEL environment variable to specify the name of the different model.
 
----
+___
 
 ## Typical Development Workflow
 
